@@ -1,0 +1,10 @@
+.idea
+resized/*
+!resized/index.php
+!resized/.htaccess
+cache/*
+!cache/index.html
+!cache/.htaccess
+lib/config.php
+uploads/*
+!uploads/index.html
