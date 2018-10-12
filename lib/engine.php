@@ -1049,7 +1049,7 @@ final class Webfairy
         unset($post_data['attrs']);
         
         foreach ($attrs as $attr_key => $attr_value) {
-        	if($attr = $this->db->postattrs('post_id',$id)->where('attr_key',$key)->fetch()){
+        	if($attr = $this->db->postattrs('post_id',$id)->where('attr_key',$attr_key)->fetch()){
         	   $attr->update(array('attr_value' => $attr_value));
         	}else{
         	   $this->db->postattrs()->insert(
